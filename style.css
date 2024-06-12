@@ -4,14 +4,32 @@
     padding: unset;
     /* outline: unset; quitar el border de los formularios */
     /* border: unset; quita los bordes */
-    
 
-    box-sizing: border-box;
-    display: block;
+    list-style: none;/* sirve para quitar los punto sde la lista */
+
+    box-sizing: border-box; 
+    /* impide que la caja se agrande aunque se le agregue margi o padding */
+
+    text-decoration: none;/* quitar la linea debajo de los texto de la etiqueta a */
+    /* display: block; como se va a mostrar el contenido ya sea en bloque o en fila */
+
 
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
 
+.navbar__nav {
+    display: flex; /* por defecto el viene en flex-direction:row;*/
+    align-items: center;
+    justify-content: space-between;/* space-between distruir el espacio entre elementos */
+    /* gap: 100px; espaciado entre elementos */
+    padding: 15px 50px;
+
+}
+
+.navbar__nav__list {
+    display: flex;
+    gap: 30px;
 }
