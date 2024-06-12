@@ -1,0 +1,17 @@
+*{
+    /* propiedades de espaciado */
+    margin: unset;
+    padding: unset;
+    /* outline: unset; quitar el border de los formularios */
+    /* border: unset; quita los bordes */
+    
+
+    box-sizing: border-box;
+    display: block;
+
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
