@@ -34,7 +34,12 @@
     gap: 30px;
 }
 
-.main__section {}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
 
 .main__section__container {
     display: grid;/*  */
