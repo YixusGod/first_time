@@ -1,29 +1,37 @@
-*{
+* {
     /* propiedades de espaciado */
     margin: unset;
     padding: unset;
     /* outline: unset; quitar el border de los formularios */
     /* border: unset; quita los bordes */
 
-    list-style: none;/* sirve para quitar los punto sde la lista */
+    list-style: none;
+    /* sirve para quitar los punto sde la lista */
 
     box-sizing: border-box;
     /* impide que la caja se agrande aunque se le agregue margi o padding */
 
-    text-decoration: none;/* quitar la linea debajo de los texto de la etiqueta a */
+    text-decoration: none;
+    /* quitar la linea debajo de los texto de la etiqueta a */
     /* display: block; como se va a mostrar el contenido ya sea en bloque o en fila */
 
 
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E2D9CF;
+}
+
 .navbar__nav {
-    display: flex; /* autolayaout del css, por defecto el viene en flex-direction:row;*/
+    display: flex;
+    /* autolayaout del css, por defecto el viene en flex-direction:row;*/
     align-items: center;
-    justify-content: space-between;/* space-between distruir el espacio entre elementos */
+    justify-content: space-between;
+    /* space-between distruir el espacio entre elementos */
     /* gap: 100px; espaciado entre elementos */
     padding: 15px 50px;
 
@@ -34,17 +42,50 @@
     gap: 30px;
 }
 
+.main__section__container button {
+    background-color: #8C4E34;
+    color: #ffff;
+    padding: 30px 15px;
+    width: 100%;/* ancho */
+}
 
+.main__section__jumbotron {
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    font-size: 64px;
+    text-align: center;
+    background-image: url(/assent/jumbotrondefinitivo.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 10px 60px;
+    background-repeat: no-repeat;
+
+    /* line-height: a partir de 100%; salto de linea */
+}
 
 h2 {
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
-.main__section__container {
-    display: grid;/*  */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* crea las columnas con los pixel y el espaciado de los frame, con el auto-fill rellena el espacio vacio y fit ajusta los espacio */
+.main__section__consejos__textos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    /* ojo con esta funcion que exsten dos justify al igual que align */
     
+} 
+
+.main__section__container {
+    display: grid;
+    /* usar cuando se necesite colocar columnas// grillas */
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    /* crea las columnas con los pixel y el espaciado de los frame, con el auto-fill rellena el espacio vacio y fit ajusta los espacio */
+
     gap: 12px;
     padding: 60px;
 
@@ -56,5 +97,6 @@ h2 {
     align-items: center;
 
     padding: 12px;
-    text-align: center;/* posicion del texto */
+    text-align: center;
+    /* posicion del texto */
 }
