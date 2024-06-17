@@ -11,7 +11,7 @@
     box-sizing: border-box;
     /* impide que la caja se agrande aunque se le agregue margi o padding */
 
-    text-decoration: none; 
+    text-decoration: none;
     /* quitar la linea debajo de los texto de la etiqueta a */
     /* display: block; como se va a mostrar el contenido ya sea en bloque o en fila */
 }
@@ -32,12 +32,23 @@ body {
     /* gap: 100px; espaciado entre elementos */
     padding: 15px 50px;
 
-}
 
+}
+.navbar__nav a {
+    color: black;
+}
 .navbar__nav__list {
     border-bottom: unset;
     display: flex;
     gap: 30px;
+}
+
+.navbar__nav button {
+    padding: 10px;
+    background-color: #8C4E34;
+    color:white;
+    border: none;
+    cursor: pointer;
 }
 
 .main__section__jumbotron {
@@ -73,6 +84,7 @@ h2 {
 .main__section__consejos__textos__internos__color {
     background-color: #8C4E34;
     padding: 20px;
+    color: white;
 }
 
 .main__section__consejos__textos__internos__T {
@@ -161,71 +173,66 @@ h2 {
     justify-content: space-between;
     font-size: 20px;
     max-width: 20%;
-    
+
 }
 
 .footer__section__izquierdo__formulario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     background-color: #8c4e3494;
     padding: 15px;
 }
-.footer__section__izquierdo__formulario .footer__section__izquierdo__formulario__Email {
+.footer__section__izquierdo form {
     position: relative;
+    
 }
-
-.footer__section__izquierdo__formulario__Email input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: white;
-    margin-bottom: 30px;
+.footer__section__izquierdo form input{
+    background: transparent;
+    font-size: 15px;
+    padding-bottom: 10px;
     border: none;
     border-bottom: 1px solid white;
+    width: 100%;
     outline: none;
-    background: transparent;
+    color: white;
+}
+::placeholder {
+    color: white;
 }
 
-.footer__section__izquierdo__formulario__Email label {
+.footer__section__izquierdo form button {
     position: absolute;
+    height: 98%;
+    width: 15%;
+    left: 85%;
     top: 0;
-    left: 0;
-    padding: 10px;
-    font-size: 16px;
-    color: white;
-    pointer-events: none;
-    transition: .5;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-left: 1px solid white;
+    transform: 1;
+    }
+
+.footer__section__izquierdo form button:hover {
+    background-color: white;
 }
 
-.footer__section__izquierdo__formulario__Email input:focus ~ label, 
-.footer__section__izquierdo__formulario__Email input:valid ~ label {
-    left: 0px;
-    top: -20px;
-    color: white;
-    font-size: 12px;
+.footer__section__izquierdo button img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
-
-.footer__section__izquierdo__formulario form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
+.footer__section__izquierdo button img:hover {
+    filter: invert(100%);
+   
 }
-
 .footer__section__izquierdo__redes {
     display: flex;
     justify-content: space-between;
     background-color: #8c4e3494;
     padding: 15px;
-    
+
 }
 .footer__section__izquierdo img {
     max-width: 20px;
@@ -246,7 +253,7 @@ h2 {
     justify-content: space-between;
     max-width: 20%;
     min-width: 15%;
-    
+
 }
 
 .footer__section__derecho__informacion {
@@ -254,7 +261,7 @@ h2 {
     flex-direction: column;
     background-color: #8c4e3494;
     padding: 15px;
-    
+
 }
 .footer__section__derecho__informacion a {
     color: white;
@@ -265,5 +272,5 @@ h2 {
     flex-direction: column;
     background-color: #8c4e3494;
     padding: 15px;
-    
+
 }
