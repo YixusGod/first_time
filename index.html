@@ -55,7 +55,7 @@
                     <div class="main__section__consejos__textos__internos__color">
                         <p><b>Elige tu deporte:</b> Explora las diversas opciones que existen, como paracaidismo, surf, rafting, escalada, entre otras. Investiga sobre cada uno, sus características, niveles de dificultad y lo que te atrae más.</p>
                     </div>
-                    <div>
+                    <div class="main__section__consejos__textos__internos__T">
                         <p><b>Asesórate con expertos:</b> Busca instructores o guías certificados en el deporte que elegiste. Ellos te brindarán la formación adecuada, te enseñarán las técnicas básicas y te guiarán en tus primeros pasos.</p>
                     </div>
 
@@ -64,7 +64,7 @@
                 <img src="/assent/tablas _div_.png" alt="">
 
                 <div class="main__section__consejos__textos__internos"> <!-- Grupo 2 -->
-                    <div>
+                    <div class="main__section__consejos__textos__internos__T">
                         <p><b>Prioriza la seguridad:</b> No te arriesgues innecesariamente. Asegúrate de utilizar el equipo de protección adecuado y en buen estado, como cascos, gafas, arneses, etc.</p>
                     </div>
                     <div class="main__section__consejos__textos__internos__color">
@@ -106,12 +106,13 @@
                         <img src="/assent/Star 5.svg" alt="">
                     </div>
 
-                    <div>
+                    <div class="main__section__container__producto__precio"><!-- precio -->
+                        
                         <p>200</p>
                         <p><b>100</b></p>
                     </div>
 
-                    <button>comprar</button>
+                    <button onclick="location.href='https://www.agv.com/es/es/'">comprar</button>
                 </div>
                 <div class="main__section__container__producto"><!-- Producto 2-->
                     <img src="/assent/guantes.png" alt="">
@@ -137,12 +138,12 @@
                         <img src="/assent/Star 5.svg" alt="">
                     </div>
 
-                    <div>
+                    <div class="main__section__container__producto__precio"><!-- precio -->
                         <p>200</p>
                         <p><b>100</b></p>
                     </div>
 
-                    <button>comprar</button>
+                    <button onclick="location.href='/'">comprar</button>
                 </div>
                 <div class="main__section__container__producto"><!-- Producto 3-->
                     <img src="/assent/skate.png" alt="">
@@ -168,12 +169,12 @@
                         <img src="/assent/Star 5.svg" alt="">
                     </div>
 
-                    <div><!-- Precio -->
+                    <div class="main__section__container__producto__precio"><!-- Precio -->
                         <p>200</p>
                         <p><b>100</b></p>
                     </div>
 
-                    <button>comprar</button>
+                    <button click="location.href='/'">comprar</button>
                 </div>
                 <div class="main__section__container__producto"><!-- Producto 4-->
                     <img src="/assent/converse.png" alt="">
@@ -199,36 +200,39 @@
                         <img src="/assent/Star 5.svg" alt="">
                     </div>
 
-                    <div>
+                    <div class="main__section__container__producto__precio"><!-- precio -->
                         <p>200</p>
                         <p><b>100</b></p>
                     </div>
 
-                    <button>comprar</button>
+                    <button onclick="location.href='/'">comprar</button>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <section>
+        <section class="footer__section">
 
-            <div><!-- lado Izquierdo-->
+            <div class="footer__section__izquierdo"><!-- lado Izquierdo-->
 
-                <div><!-- formulario de email -->
+                <div class="footer__section__izquierdo__formulario"><!-- formulario de email -->
     
-                    <h3>¿Quieres vivir tu vida al lìmite?<b> Ùnete a nosotros y disfrutas de promociones y eventos por todo el mundo</b></h3>
+                
+                     <p>¿Quieres vivir tu vida al límite? <b>Únete a nosotros y disfrutas de promociones y eventos por todo el mundo</b></p>
+                    
     
                     <form action="/">
-                        
-                        <input type="email" name="correo" id="correo" placeholder="Email">
-    
+                        <div class="footer__section__izquierdo__formulario__Email">
+                            <input type="email" name="correo" id="correo" placeholder="Email">
+                            <label>Email</label>
+                        </div>
                         <button type="submit"><img src="/assent/email.svg" alt=""></button>
     
                     </form>
                 
                 </div>
     
-                <div><!-- Redes Sociales -->
+                <div class="footer__section__izquierdo__redes"><!-- Redes Sociales -->
                     
                     <p>follow:</p>
                     <img src="/assent/instagram.svg" alt="">
@@ -239,13 +243,13 @@
                     <img src="/assent/tiktok.svg" alt="">
                 </div>
             </div>
-            <div><!-- Medio -->
+            <div class="footer__section__medio"><!-- Medio -->
                 <h3>Ubicación</h3>
                 <p>San Diego 2006. Está abierto las 24 horas del día, todos los días de la semana.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.288407895714!2d-67.96514510182423!3d10.221589267294148!2m3!1f270!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x8e805d3a6bcf1205%3A0x162edfb637bca30c!2sFin%20de%20Siglo!5e1!3m2!1sen!2sve!4v1718135933693!5m2!1sen!2sve" width="662" height="269" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div><!-- Lado Derecho -->
-                <div><!-- informacion -->
+            <div class="footer__section__derecho"><!-- Lado Derecho -->
+                <div class="footer__section__derecho__informacion"><!-- informacion -->
                     <h3>Mas informacion</h3>
 
                     <ul>
@@ -256,7 +260,7 @@
                         <li><a href="/">Galeria</a></li>                 
                      </ul>                  
                 </div>
-                <div><!-- Telefono -->
+                <div class="footer__section__derecho__telefono"><!-- Telefono -->
                     <h3>Contacto</h3>
                     <p>+58 412 8371224</p>
                     <p>+58 412 8371225</p>

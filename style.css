@@ -11,7 +11,7 @@
     box-sizing: border-box;
     /* impide que la caja se agrande aunque se le agregue margi o padding */
 
-    text-decoration: none;
+    text-decoration: none; 
     /* quitar la linea debajo de los texto de la etiqueta a */
     /* display: block; como se va a mostrar el contenido ya sea en bloque o en fila */
 }
@@ -35,6 +35,7 @@ body {
 }
 
 .navbar__nav__list {
+    border-bottom: unset;
     display: flex;
     gap: 30px;
 }
@@ -50,7 +51,7 @@ body {
     background-position: 50% 50%;
     padding: 10px 60px;
     background-repeat: no-repeat;
-    
+
     /* line-height: a partir de 100%; esto es un salto de linea */
 }
 
@@ -61,43 +62,45 @@ h2 {
     text-align: center;
     padding: 10px 0px;
 }
-
 .main__section__consejos__textos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     justify-items: center;
     /* ojo con esta funcion que exsten dos justify al igual que align */
-    padding: 0px 60px;
+    padding: 10px 60px;
     text-align: center;
-} 
+}
 
 .main__section__consejos__textos__internos__color {
-
     background-color: #8C4E34;
-    
-    
+    padding: 20px;
+}
 
+.main__section__consejos__textos__internos__T {
+    padding: 20px;
 }
 
 .main__section__consejos__textos img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    max-height: 300px;
+    max-width: 350px;
 }
 
 .main__section__consejos__textos__internos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     padding: 10px;
 }
 
 .main__section__container {
     display: grid;
     /* usar cuando se necesite colocar columnas// grillas */
-    grid-template-columns: repeat(auto-fit, minmax(221px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px , 1fr));
     /* crea las columnas con los pixel y el espaciado de los frame, con el auto-fill rellena el espacio vacio y fit ajusta los espacio */
-    
+
     gap: 12px;
     padding: 10px 60px;
 }
@@ -113,7 +116,7 @@ h2 {
 }
 .main__section__container__producto > img {
     height: 100px;
-    
+
 }
 
 .main__section__container__producto__talla {
@@ -123,6 +126,11 @@ h2 {
     gap: 10px;
     padding: 5px;
     border: 1px solid #2e2e2e2a;
+    color: #0000009a;
+}
+.main__section__container__producto__precio {
+    display: flex;
+    gap: 100px;
 }
 
 .main__section__container button {
@@ -131,4 +139,131 @@ h2 {
     padding: 10px;
     width: 100%;/* ancho */
     border: none;
+    cursor: pointer;
+}
+
+.footer__section {
+
+    display: flex;
+    padding: 10px 60px;
+    justify-content: center;
+    background-image: url(/assent/montainbike.jpg);
+    background-size: cover;
+    background-position: 80% 50%;
+    color: white;
+    justify-items: center ;
+    gap: 5%;
+}
+
+.footer__section__izquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    max-width: 20%;
+    
+}
+
+.footer__section__izquierdo__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #8c4e3494;
+    padding: 15px;
+}
+.footer__section__izquierdo__formulario .footer__section__izquierdo__formulario__Email {
+    position: relative;
+}
+
+.footer__section__izquierdo__formulario__Email input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.footer__section__izquierdo__formulario__Email label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5;
+}
+
+.footer__section__izquierdo__formulario__Email input:focus ~ label, 
+.footer__section__izquierdo__formulario__Email input:valid ~ label {
+    left: 0px;
+    top: -20px;
+    color: white;
+    font-size: 12px;
+}
+
+.footer__section__izquierdo__formulario form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.footer__section__izquierdo__redes {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8c4e3494;
+    padding: 15px;
+    
+}
+.footer__section__izquierdo img {
+    max-width: 20px;
+}
+.footer__section__medio {
+    background-color: #8c4e3494;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    padding: 10px;
+    align-content: space-between;
+}
+
+.footer__section__derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 20%;
+    min-width: 15%;
+    
+}
+
+.footer__section__derecho__informacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #8c4e3494;
+    padding: 15px;
+    
+}
+.footer__section__derecho__informacion a {
+    color: white;
+}
+
+.footer__section__derecho__telefono {
+    display: flex;
+    flex-direction: column;
+    background-color: #8c4e3494;
+    padding: 15px;
+    
 }
